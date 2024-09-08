@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required 
+      
+      
+      meta tags -->
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="manifest.json">
+    <script src="referencias/vue/vue.js"></script>
+    <script src="referencias/vuex/vuex.js"></script>  
+    <script src="referencias/lbdate/lbdate.umd.min.js"></script>
+    <link rel="stylesheet" href="referencias/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="referencias/buefy/flexbox/css/flexboxgrid.css" />
+    <link rel="stylesheet" href="referencias/buefy/flexbox/css/flexboxgrid.min.css" />
+    <link rel="stylesheet" href="referencias/buefy/dist/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="referencias/buefy/dist/buefy.min.css" />
+    <script src="referencias/buefy/dist/buefy.min.js"></script>
+    <script src="utiles.js"></script> 
+    <style type="text/css">#map{height:100vh;width: auto}</style>
+    <title>DLGEO</title>
+
+  <style type="text/css">
+              .navbar {
+                margin:0 !important;
+                padding: 0px !important;
+              }
+              html, body {
+                margin: 0;
+                padding: 0;
+                background-color:#fbf9f9;
+              }
+              .flex-grid {
+                display: flex;
+              }
+              .col {
+                flex: 1;
+              }
+              @media (max-width: 600px) {
+              .flex-grid {
+                  display: block;
+                }
+              }
+              .flex-grid-thirds {
+                display: flex;
+                justify-content: space-between;
+              }
+              .flex-grid-thirds .col {
+                width: 32%;
+              }
+              li {
+                border-top:0px;
+                border-left:0px;
+                border-right:0px;
+                background-color:rgb(255, 255, 255);
+                border-bottom:1px solid rgb(179, 182, 180);
+                margin:0px;
+                padding:0px;
+              }
+</style>
+
+
+</head>
+<body>
+<div id="app">
+  <!-- Pagina de inicio de Login -->
+<div v-if="$store.state.layout_visible == 'layout_principal'">
+	    <dl_principal>
+	    </dl_principal> 
+   </div>
+</div>
+
+
+    <script src="componentes/principal.js"></script>  
+    <script src="app.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('sw.js').then(function(){
+            console.log('SW registrado desde desde index.html');
+          })
+
+        });
+      }
+    </script>
+
+</body>
+</html>

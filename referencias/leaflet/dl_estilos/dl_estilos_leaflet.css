@@ -1,0 +1,11 @@
+.L_etiquetas_localidades {
+  background: grey;
+  height: 30px;
+  border: 2px solid black
+}
+.leaflet-tooltip-left.L_etiquetas_localidades::before {
+  border-left-color: black;
+}
+.leaflet-tooltip-right.L_etiquetas_localidades::before {
+  border-right-color: black;
+} 
