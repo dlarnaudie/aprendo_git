@@ -45,15 +45,15 @@ template: /*html*/`
         <div class="box p-1 m-1 modal-card" style="width: auto">
               <div class="columns is-desktop p-1 m-1">
                   <b-field class="column is-one-third-desktop p-1 m-1" is-12 label="Palabra en idioma original">
-                    <b-input placeholder="Palabra original:"  v-model="$store.state.nueva_palabra" maxlength="350"></b-input>
+                    <b-input placeholder="Palabra original"  v-model="$store.state.nueva_palabra" maxlength="350"></b-input>
                   </b-field>
 
                   <b-field class="column is-one-third-desktop p-1 m-1" is-12 label="Palabra traducida">
-                    <b-input placeholder="Palabra traducida:"  v-model="$store.state.nueva_palabra_traducida" maxlength="350"></b-input>
+                    <b-input placeholder="Palabra traducida"  v-model="$store.state.nueva_palabra_traducida" maxlength="350"></b-input>
                   </b-field>
 
                   <b-field class="column is-one-third-desktop p-1 m-1" is-12 label="Explicación de significado">
-                    <b-input placeholder="Explicación:"  v-model="$store.state.nueva_explicacion" maxlength="350"></b-input>
+                    <b-input placeholder="Explicación"  v-model="$store.state.nueva_explicacion" maxlength="350"></b-input>
                   </b-field>
             </div>
             <div class="columns is-desktop p-1 m-1">
